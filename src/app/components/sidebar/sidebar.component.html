@@ -1,0 +1,6 @@
+<mat-selection-list #categoria [multiple]="false" class="bg-verde">
+    <mat-list-item class="bg-verde">Categorias</mat-list-item>
+    <mat-list-option class="bg-blanco" *ngFor="let categoria of Categorias" [value]="categoria">
+        {{categoria}}
+    </mat-list-option>
+</mat-selection-list>

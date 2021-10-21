@@ -7,8 +7,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav navbar-rigth">
-                <li class="nav-item active">
+            <ul class="navbar-nav navbar-rigth bg-verde">
+                <li class="nav-item active bg-verde">
                     <a class="nav-link" href="#"> </a>
                 </li>
                 <li class="nav-item dropdown">
@@ -53,6 +53,29 @@
 
                 </li>
             </ul>
+            <div class="col-1"> </div>
+
+
+            <mat-form-field class="example-form-field" appearance="fill">
+                <mat-label>¿Que estas buscando?</mat-label>
+                <input matInput type="text" [(ngModel)]="value">
+                <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" class="bg-verde" (click)="value=''">
+                  <mat-icon>done</mat-icon>
+                </button>
+            </mat-form-field>
+
         </div>
+
     </nav>
+
+
+</div>
+<div class="container bg-blanco">
+    <div class="row ">
+        <div class="col"></div>
+        <div class="col">
+            <h4 class="text-center">Diseño Floral y más</h4>
+        </div>
+        <div class="col"></div>
+    </div>
 </div>
