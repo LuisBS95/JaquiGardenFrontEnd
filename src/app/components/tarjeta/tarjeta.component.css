@@ -1,0 +1,19 @@
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+.tarjetatitulo {
+    font-size: medium;
+    color: rgb(0, 4, 255);
+}
+
+p {
+    font-size: small;
+}
+
+.borde {
+    border: 2px;
+    border-width: 2px;
+}

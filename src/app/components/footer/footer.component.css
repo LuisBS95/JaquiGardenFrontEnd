@@ -1,0 +1,21 @@
+.iconos {
+    font-size: 40px;
+    text-align: center;
+}
+
+.margen {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #67BD8A;
+    color: aliceblue;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+strong {
+    font-size: 10px;
+    text-align: center;
+}
