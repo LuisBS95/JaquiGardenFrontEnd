@@ -8,6 +8,10 @@
     color: #67BD8A;
 }
 
+.margen {
+    padding: 0px;
+}
+
 .example-form-field {
     width: 300px;
 }
