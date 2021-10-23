@@ -1,0 +1,53 @@
+.fondo {
+    border-radius: 8px;
+}
+
+.imagenfondo {
+    background-color: aliceblue;
+    width: 600px;
+    height: 550px;
+}
+
+.alto {
+    height: 300px;
+    margin: 0px;
+}
+
+.margen {
+    padding: 0px;
+    margin: 10px;
+}
+
+.titulo {
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-dialog-container {
+    background-color: blue;
+}
+
+.bg-verde {
+    background-color: #67BD8A;
+    color: aliceblue;
+}
+
+.dato {
+    font-weight: bold;
+}
+
+.bg-blanco {
+    color: #67BD8A;
+    font-size: large;
+}
+
+.etiqueta {
+    height: 30px;
+    width: 100px;
+    font-size: large;
+}
