@@ -9,6 +9,10 @@
     width: 20%;
 }
 
+.margen {
+    margin-top: 20px;
+}
+
 .bg-blanco {
     background-color: #D9F7E5;
     color: #67BD8A;

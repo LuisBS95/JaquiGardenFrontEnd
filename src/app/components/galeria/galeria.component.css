@@ -19,3 +19,8 @@
     height: 60px;
     border-radius: 10px;
 }
+
+.bg-verde {
+    background-color: #67BD8A;
+    color: aliceblue;
+}
