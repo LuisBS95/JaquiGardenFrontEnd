@@ -13,6 +13,8 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { FooterComponent } from './footer/footer.component';
 import { ModalComponent } from './tarjeta/modal.component';
+import { Tarjeta2Component } from './tarjeta2/tarjeta2.component';
+import { Modal2Component } from './tarjeta2/modal2.component';
 
 
 
@@ -29,7 +31,7 @@ import { ModalComponent } from './tarjeta/modal.component';
     TarjetaComponent, 
     GaleriaComponent,
      FooterComponent, 
-     ModalComponent
+     ModalComponent, Tarjeta2Component, Modal2Component
   ],
   imports: [
     CommonModule,
