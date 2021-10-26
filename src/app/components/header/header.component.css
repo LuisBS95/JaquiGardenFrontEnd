@@ -1,6 +1,13 @@
 .bg-verde {
     background-color: #67BD8A;
     color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.bg-verdenav {
+    background-color: #67BD8A;
+    color: aliceblue;
 }
 
 .bg-blanco {
@@ -14,4 +21,9 @@
 
 .example-form-field {
     width: 300px;
+}
+
+.nav-link {
+    background-color: #67BD8A;
+    color: aliceblue;
 }
