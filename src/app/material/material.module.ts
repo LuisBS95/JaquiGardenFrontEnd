@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -23,7 +24,8 @@ import {MatDividerModule} from '@angular/material/divider';
   MatButtonModule,
   MatDialogModule,
   MatFormFieldModule,
-  MatDividerModule
+  MatDividerModule,
+  MatSelectModule
   ],
   exports: [
     MatInputModule,
@@ -34,7 +36,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatDividerModule
+    MatDividerModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

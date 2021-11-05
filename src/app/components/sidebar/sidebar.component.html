@@ -1,7 +1,7 @@
 <mat-selection-list #categoria [multiple]="false" class="bg-verde">
-    <mat-list-item class="bg-verde">Categorias</mat-list-item>
-    <mat-list-option class="bg-blanco" *ngFor="let categoria of Categorias" [value]="categoria">
-        {{categoria}}
+    <mat-list-item class="bg-verde">Ocaciones</mat-list-item>
+    <mat-list-option class="bg-blanco" (click)="irProductos(categoria.idEvento)" *ngFor="let categoria of indice">
+        {{categoria.evento}}
         <mat-divider></mat-divider>
     </mat-list-option>
 

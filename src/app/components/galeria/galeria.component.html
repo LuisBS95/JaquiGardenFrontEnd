@@ -1,13 +1,17 @@
 <div class="container separacion">
     <div class="row bg-verde barratitulo">
-        <div class="col-5"></div>
-        <div class="col-2 titulocategoria">
-            Categoria
+
+        <div class="col titulocategoria">
+            {{evento.evento}}
         </div>
-        <div class="col-5"></div>
 
     </div>
     <div class="col">
-        <app-tarjeta2></app-tarjeta2>
+        <ul class="ch-grid">
+            <li *ngFor="let pro of productos">
+                <app-tarjeta2 [producto]="pro"></app-tarjeta2>
+
+            </li>
+        </ul>
     </div>
 </div>

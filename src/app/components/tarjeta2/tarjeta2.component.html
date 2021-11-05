@@ -1,10 +1,6 @@
-<ul class="ch-grid">
-    <li *ngFor="let cosa of cosas">
-        <div class="ch-item ch-img-1" [ngStyle]="{'background-image': 'url(&quot;' + photo + '&quot;)'}">
-            <div class="ch-info">
-                <h3>Pink Lightning</h3>
-                <p>by JaquiGarden <a (click)="openDialog()">Ver mas</a></p>
-            </div>
-        </div>
-    </li>
-</ul>
+<div class="ch-item ch-img-1" [ngStyle]="{'background-image': 'url(&quot;' + photo + '&quot;)'}">
+    <div class="ch-info">
+        <h3>{{producto.productos}}</h3>
+        <p>by JaquiGarden <a (click)="openDialog()">Ver mas</a></p>
+    </div>
+</div>

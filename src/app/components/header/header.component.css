@@ -3,6 +3,8 @@
     color: aliceblue;
     display: flex;
     align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .bg-verdenav {
@@ -13,6 +15,9 @@
 .bg-blanco {
     background-color: #D9F7E5;
     color: #67BD8A;
+    width: 91%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .margen {
@@ -20,10 +25,18 @@
 }
 
 .example-form-field {
-    width: 300px;
+    width: 80%;
 }
 
 .nav-link {
     background-color: #67BD8A;
     color: aliceblue;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.conte {
+    border-radius: 15px;
 }

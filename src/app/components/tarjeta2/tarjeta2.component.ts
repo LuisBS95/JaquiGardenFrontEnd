@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { Modal2Component } from './modal2.component';
+import { Producto } from '../../models/productos';
 
 @Component({
   selector: 'app-tarjeta2',
@@ -11,16 +12,18 @@ export class Tarjeta2Component implements OnInit {
 
   animal: string;
   name: string;
-  photo = '../../../assets/imagenes/carrusel/taz2.jpg';
-  cosas=[1,2,3,4,5,6];
+  photo = '../../../assets/imagenes/carrusel/';
+  @Input() producto: Producto;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+   
+  }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(Modal2Component, {
       width: '650px',
       height: '600px',
-      data: {name: this.name, animal: this.animal}
+      data: this.producto
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -30,6 +33,8 @@ export class Tarjeta2Component implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.producto)
+    this.photo=this.photo + this.producto.imagen;
   }
 
 }
