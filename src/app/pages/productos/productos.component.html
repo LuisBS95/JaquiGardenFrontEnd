@@ -1,0 +1,31 @@
+<div class="container separacion">
+    <div class="row bg-verde barratitulo">
+        <div class="col titulocategoria">
+            Productos
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Basic mat-select with initial value</h4>
+            <mat-form-field appearance="fill">
+                <mat-label>Favorite Food</mat-label>
+                <mat-select [(value)]="eventoSelecionado">
+                    <mat-option></mat-option>
+                    <mat-option *ngFor="let pro of productos">{{ pro.producto }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <p>You selected: </p>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>
+
+< <div class="col">
+    <ul class="ch-grid">
+        <li *ngFor="let pro of productos">
+            <app-tarjeta2 [producto]="pro"></app-tarjeta2>
+
+        </li>
+    </ul>
+    </div>

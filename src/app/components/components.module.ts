@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../material/material.module';
-
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderComponent } from './header/header.component';
 
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ModalComponent } from './tarjeta/modal.component';
 import { Tarjeta2Component } from './tarjeta2/tarjeta2.component';
 import { Modal2Component } from './tarjeta2/modal2.component';
+
 
 
 
@@ -36,13 +38,17 @@ import { Modal2Component } from './tarjeta2/modal2.component';
   imports: [
     CommonModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
     BodyHomeComponent,
     GaleriaComponent,
-    FooterComponent
+    FooterComponent,
+    Tarjeta2Component,
+    Modal2Component
   ]
 })
 export class ComponentsModule { }

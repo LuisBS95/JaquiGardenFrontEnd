@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventosService } from '../../services/eventos.service';
+import { Evento } from '../../models/eventos';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-aa=[1,2,3,4,5,6];
-  constructor() { }
+eventos : Evento[];
+
+  constructor(private evService: EventosService) { 
+
+
+    
+  }
 
   ngOnInit(): void {
+    this.evService.obtenerEventos().subscribe(e=>{
+      this.eventos=e;
+      console.log(this.eventos);
+    })
   }
+
+  
 
 }

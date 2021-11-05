@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         <div class="col-9">
-            <img src="../../../assets/imagenes/carrusel/taz3.jpg" class="fondo " width="420px" height="315px">
+            <img [src]="photo" class="fondo " width="420px" height="315px">
         </div>
         <div class="col-3 bg-blanco">
             <div class="row dato  mb-2">
@@ -15,7 +15,7 @@
 
             </div>
             <div class="row  mb-5">
-                Boda
+                {{producto.categorias}}
 
             </div>
             <div class="row dato mb-2">
@@ -23,15 +23,15 @@
 
             </div>
             <div class="row  mb-5">
-                Hombre
+                {{producto.genero}}
 
             </div>
             <div class="row dato  mb-2">
-                Tipo:
+                Evento:
 
             </div>
             <div class="row  mb-5">
-                Caja
+                {{producto.evento}}
 
             </div>
             <div class="row dato mb-2">
@@ -39,7 +39,7 @@
 
             </div>
             <div class="row  mb-2">
-                $10.00
+                {{producto.imagen}}
 
             </div>
 
@@ -53,12 +53,12 @@
 
         </div>
         <div class="row  mb-2">
-            daskjdlkasjdklashkfjaslhdlasjdalsjdklasjldhkaslhdkajsdhkljashkld adsdasfasdaskdasjskd jalskjdlkasjdñlaskjñdajskdflasjkldahskfj
+            {{producto.descripcion}}
 
         </div>
         <div class="row">
             <div class="col">
-                <button mat-icon-button color="primary" [mat-dialog-close]="data.animal" class=" ">
+                <button mat-icon-button color="primary" (click)="onNoClick()" class=" ">
                 <mat-icon>add_circle</mat-icon>
                 Mas Detalles
             </button>

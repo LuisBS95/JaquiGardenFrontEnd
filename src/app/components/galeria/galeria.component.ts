@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Producto } from 'src/app/models/productos';
+import { Evento } from '../../models/eventos';
+import { ProductosService } from '../../services/productos.service';
 
 @Component({
   selector: 'app-galeria',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeria.component.css']
 })
 export class GaleriaComponent implements OnInit {
-  a= [1,1,23,3,3,3];
-  constructor() { }
+
+  productos: Producto[];
+  @Input() evento:Evento;
+  constructor(private productoService: ProductosService) {
+  
+   }
 
   ngOnInit(): void {
+    this.productoService.obtenerProductosporEvento(this.evento.idEvento).subscribe(p=>{
+      this.productos=p;
+    })
   }
+  
 
 }
